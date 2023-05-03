@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Medium.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-behavior: slow;
+  scroll-behavior: 4000ms;
+}
+body {
+  margin: 0;
+  font-family:"Barlow";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

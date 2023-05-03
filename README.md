@@ -1,2 +1,2 @@
 # jittakan-proj
-Freshness, creativity, and simplicity in spaghetti code.
+My blog is about freshness, creativity, and simplicity in spaghetti code.

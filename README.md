@@ -11,3 +11,4 @@ This site uses most of the recognized stack, including Spring Boot, React.js, an
 
 
 ![PROJ-F-OPT](proj-client/public/proj-images/PROJ-F-OPT.gif)
+*Short videos' quality is optimized for GIFs..

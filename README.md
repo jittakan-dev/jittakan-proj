@@ -5,4 +5,4 @@ This site uses most of the recognized stack, including Spring Boot, React.js, an
 
 *It is recommended to view it in 1920x1080.
 
-![PROJ-F-OPT](jittakan-proj/proj-client/public/proj-images/PROJ-F-OPT.gif)
+![PROJ-F-OPT](proj-client/public/proj-images/PROJ-F-OPT.gif)

@@ -207,7 +207,7 @@ const Home = () => {
           </div>
 
           <div className="w-full py-10 px-6 text-center text-whiteY">
-            © 2023 AboutJittakan. Jittakan is developer located in Bangkok,
+            © 2023 JITTAKAN-ProJ. Jittakan is a developer located in Bangkok,
             Thailand.
             <br /> All Rights Reserved.
           </div>

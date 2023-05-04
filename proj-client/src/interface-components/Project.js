@@ -184,7 +184,9 @@ const Project = () => {
                         <div className="p-2 text-left text-2xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl border-b-8 border-darkLGB">
                           The
                           <br className="block sx:hidden smr:hidden 2xl:block" />
-                          Why
+                          <span className="pl-0 sx:pl-1 smr:pl-1 sm:pl-0 md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0">
+                            Abstract
+                          </span>
                         </div>
                       </div>
                       <div

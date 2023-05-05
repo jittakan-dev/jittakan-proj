@@ -30,9 +30,6 @@ module.exports = {
 
         "2xl": { min: "1536px" },
       },
-      fontFamily: {
-        Mulish: ["Mulish"],
-      },
       fontSize: {
         "base-s": [
           "0.925rem",
@@ -111,8 +108,8 @@ module.exports = {
         whiteLO: "#fafaca",
         darkOlive: "#4b8001",
         olive: "#81a84a",
-
         mustard: "#e3e334",
+        blueSea: "#68C5A8",
       },
     },
   },

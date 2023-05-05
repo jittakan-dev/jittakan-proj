@@ -6,11 +6,6 @@
   font-family: "Barlow";
   src: url("../fonts/Barlow-Medium.ttf");
 }
-@font-face {
-  font-family: "Mulish";
-  src: url("../fonts/Mulish-Regular.ttf");
-}
-
 html {
   scroll-behavior: smooth;
   scroll-behavior: slow;
@@ -27,32 +22,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.logo{
-  background: linear-gradient(-45deg, #f7f7eb, #f5c6a6,#e8c3d3, #cadefa, #f7f7eb);
-  
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-  25% {
-		background-position: 50% 50%;
-	}
-  37% {
-		background-position: 70% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-  62% {
-		background-position: 70% 50%;
-	}
-  75% {
-		background-position: 50% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+

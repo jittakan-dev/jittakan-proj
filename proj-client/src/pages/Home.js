@@ -1,9 +1,9 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
-import Project from "../interface-components/Project";
-import Profile from "../interface-components/Profile";
-import Contact from "../interface-components/Contact";
-import ScrollIndicator from "../interface-components/ScrollIndicator";
-import Logo from "../interface-components/Logo";
+import Project from "./Project";
+import Profile from "./Profile";
+import Contact from "./Contact";
+import ScrollIndicator from "../components/ScrollIndicator";
+import Logo from "../components/Logo";
 
 const Home = () => {
   const [, setWidth] = useState(window.innerWidth);
@@ -145,7 +145,7 @@ const Home = () => {
 
             <div className="col-span-5 row-span-1 flex flex-row w-full h-auto bg-darkLGB">
               <div className="flex justify-start items-start w-full h-full bg-whiteY">
-                <div className="pl-20 sx:pl-2 smr:pl-2 sm:pl-10 md:pl-12 lg:pl-20 xl:pl-20 2xl:pl-20 absolute">
+                <div className="pl-24 sx:pl-2 smr:pl-2 sm:pl-10 md:pl-12 lg:pl-20 xl:pl-20 2xl:pl-24 absolute">
                   <Logo />
                 </div>
                 <div className="flex flex-col justify-start items-start w-full h-full border-r-3 bg-whiteG border-darkLGB">
@@ -178,10 +178,7 @@ const Home = () => {
               <div className="w-full sticky top-2/4 z-20 text-3xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl text-left bg-whiteDG">
                 <div className="p-1 my-10 py-8 border-b-4 border-darkLGB">
                   <p className="w-fit">
-                    {menu === 1 ? "PROJECT" : menu === 2 ? "ABOUT" : null}
-                    <span className="text-4xl lg:text-xl xl:text-xl 2xl:text-4xl">
-                      .
-                    </span>
+                    {menu === 1 ? "PROJECT." : menu === 2 ? "ABOUT." : null}
                   </p>
                 </div>
               </div>
@@ -207,8 +204,8 @@ const Home = () => {
           </div>
 
           <div className="w-full py-10 px-6 text-center text-whiteY">
-            © 2023 JITTAKAN-ProJ. Jittakan is a developer located in Bangkok,
-            Thailand.
+            © 2023 JITTAKAN-ProJ. Jittakan is a creative developer located in
+            Bangkok, Thailand.
             <br /> All Rights Reserved.
           </div>
         </div>

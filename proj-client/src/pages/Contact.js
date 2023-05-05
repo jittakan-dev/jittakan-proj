@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -8,10 +8,7 @@ const Contact = () => {
         <div className="col-span-1 row-span-1 block sx:hidden smr:hidden 2xl:block z-10 bg-whiteLG border-r-4 border-darkLGB">
           <div className="w-full text-3xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl text-left sticky top-2/4 z-20 bg-whiteLG">
             <div className="p-1 py-8 my-10 border-b-4 border-darkLGB">
-              CONTACT
-              <span className="text-4xl lg:text-xl xl:text-xl 2xl:text-4xl">
-                .
-              </span>
+              CONTACT.
             </div>
           </div>
         </div>

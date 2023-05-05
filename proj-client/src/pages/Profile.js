@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useMemo,
 } from "react";
-import ProgressBar from "../interface-components/ProgressBar.js";
+import ProgressBar from "../components/ProgressBar.js";
 
 const Profile = function (props) {
   const date = new Date();

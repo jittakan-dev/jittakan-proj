@@ -67,7 +67,7 @@ const Contact = () => {
           text-2xl sx:text-lg smr:text-xl sm:text-base-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-2xl border-t-3 border-darkLGB"
             >
               <p className="w-full mt-3 p-4 cursor-pointer text-white bg-olive">
-                sn.jittakan@gmail.com
+                sn.jittakan@hotmail.com
               </p>
               <p className="w-full mt-3 p-4 cursor-pointer text-white bg-olive">
                 +66 097 060 8606

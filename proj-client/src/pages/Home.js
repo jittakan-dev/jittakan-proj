@@ -145,8 +145,10 @@ const Home = () => {
 
             <div className="col-span-5 row-span-1 flex flex-row w-full h-auto bg-darkLGB">
               <div className="flex justify-start items-start w-full h-full bg-whiteY">
-                <div className="pl-24 sx:pl-2 smr:pl-2 sm:pl-10 md:pl-12 lg:pl-20 xl:pl-20 2xl:pl-24 absolute">
-                  <Logo />
+                <div className="absolute pl-24 sx:pl-2 smr:pl-2 sm:pl-5 md:pl-12 lg:pl-20 xl:pl-20 2xl:pl-24">
+                  <div className="w-6/12 sx:w-5/12 smr:w-5/12 sm:w-6/12 md:w-6/12 lg:w-6/12 xl:w-6/12 2xl:w-6/12 bg-red-700">
+                    <Logo />
+                  </div>
                 </div>
                 <div className="flex flex-col justify-start items-start w-full h-full border-r-3 bg-whiteG border-darkLGB">
                   <div className="w-2/6 h-full p-2 border-r-3 border-darkLGB bg-whiteB"></div>
@@ -155,8 +157,8 @@ const Home = () => {
                   <div className="w-full h-1/3 p-2 border-t-3 border-darkLGB bg-whiteB"></div>
                 </div>
               </div>
-              <div className="flex-none w-2/12 sx:w-4/12 smr:w-4/12 2xl:w-2/12 px-10 sx:px-6 smr:px-10 2xl:px-10 py-12 sx:py-10 smr:py-10 2xl:py-12 border-l-3 border-darkLGB bg-whiteY">
-                <div className="flex flex-row w-auto h-full justify-center items-center text-2xl sx:text-xl smr:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl">
+              <div className="flex-none relative z-40 w-2/12 sx:w-4/12 smr:w-3/12 sm:w-3/12 md:w-2/12 lg:w-2/12 2xl:w-2/12 px-10 sx:px-6 smr:px-10 2xl:px-10 py-12 sx:py-10 smr:py-10 2xl:py-12 border-l-3 border-darkLGB bg-whiteY">
+                <div className="flex flex-row  w-auto h-full justify-center items-center text-2xl sx:text-xl smr:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-2xl 2xl:text-2xl">
                   <div
                     onClick={handleClick}
                     className={`flex p-2 cursor-pointer border-b-8 hover:border-red-700 ${

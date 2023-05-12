@@ -85,7 +85,7 @@ const Project = () => {
         <div className="w-full h-full relative flex justify-end items-center"></div>
         <div className="flex border-b-3 border-darkLGB">
           <div className="w-full border-darkLGB">
-            <div className="w-full justify-end items-center hidden sx:flex smr:flex sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden px-4 pt-2 sx:pt-4 smr:pt-4 2xl:pt-2 text-3xl">
+            <div className="w-full justify-end items-center hidden sx:flex smr:flex sm:flex md:flex mdh:flex lg:hidden lgh:flex xl:hidden 2xl:hidden px-4 pt-2 sx:pt-4 smr:pt-4 2xl:pt-2 text-3xl">
               <span className="p-1 border-b-8 border-darkLGB">Projects</span>
             </div>
             <div className="flex flex-row justify-end items-center px-6 sx:px-3 smr:px-6 2xl:px-6 py-4 sx:py-0 smr:py-0 sm:py-0 md:py-4 lg:py-4 xl:py-4 2xl:py-4 text-1.5xl sx:text-base-l smr:text-lg sm:text-base-l md:text-base-l lg:text-lg xl:text-xl 2xl:text-1.5xl">
@@ -352,7 +352,7 @@ const Project = () => {
             border-t-3 sx:border-t-0 smr:border-t-0 sm:border-t-0 md:border-t-0 lg:border-t-3 xl:border-t-3 2xl:border-t-3
           border-b-3 sx:border-b-0 smr:border-b-0 sm:border-b-0 md:border-b-0 lg:border-b-8 xl:border-b-8 2xl:border-b-8 border-darkLGB bg-whiteG"
           >
-            <p className="pl-2 mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
+            <p className="pl-2 mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
               Product-focused development
             </p>
             <p>
@@ -362,7 +362,7 @@ const Project = () => {
               constraints and maximize the potential of each possibility.
             </p>
             <p className="my-5 md:mb-4 lg:mb-4 2xl:mb-5 border-b-3 border-darkLGB"></p>
-            <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
+            <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
               Holistic process
             </p>
             <p>
@@ -382,7 +382,7 @@ const Project = () => {
             className="p-10 sx:p-6 smr:p-6 sm:p-6 md:p-6 lg:p-8 xl:p-8 2xl:p-10 border-t-4 border-b-3 border-darkLGB 
             bg-whiteG"
           >
-            <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
+            <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
               The offer
             </p>
             <p>

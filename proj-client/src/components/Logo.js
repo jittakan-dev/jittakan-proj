@@ -2,7 +2,7 @@ import React from "react";
 // import Wave from "../proj-images/wave.png";
 function Logo() {
   return (
-    <div className="py-3 sx:py-4 smr:py-4 sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-3 px-2 border-3 border-t-0 border-darkLGB bg-whiteB">
+    <div className="">
       <svg
         version="1.1"
         id="Layer_1"
@@ -13,6 +13,7 @@ function Logo() {
         width="100%"
         viewBox="0 0 340 343"
         xmlSpace="preserve"
+        className="w-6/12 sx:w-5/12 smr:w-5/12 sm:w-5/12 md:w-6/12 mdh:w-8/12 lg:w-6/12 lgh:w-8/12 xl:w-6/12 2xl:w-6/12 py-3 sx:py-4 smr:py-4 sm:py-3 md:py-2 mdh:py-2 lg:py-3 lgh:py-2 xl:py-3 2xl:py-3 px-2 border-3 border-t-0 border-darkLGB bg-whiteB"
       >
         <path
           fill="#1F4444"

@@ -57,7 +57,13 @@ const ContactForm = () => {
       },
       body: JSON.stringify({
         ...formData,
-        message: formData.name + "---" + formData.message,
+        message:
+          "Sender :" +
+          formData.name +
+          " Email :" +
+          formData.email +
+          " Message :" +
+          formData.message,
       }),
     })
       .then((response) => {
@@ -74,7 +80,7 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col w-full h-auto justify-center items-center bg-whiteG">
       <div className="w-full p-10 pb-6 text-2xl border-b-3 border-darkLGB bg-lightGB text-white">
-        <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-yellow-400">
+        <p className="pl-2  mb-5 md:mb-4 lg:mb-4 text-3xl sx:text-1.5xl smr:text-1.5xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-yellow-400">
           Send message to me.
         </p>
       </div>

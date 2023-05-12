@@ -22,9 +22,22 @@ module.exports = {
 
         sm: { min: "639px", max: "767px" }, //TRANSFORM 1 No  Mobile
 
-        md: { min: "767px", max: "1023px" },
+        md: {
+          raw: "(min-width: 767px) and (max-width: 1023px) and (max-height: 767px)",
+        },
 
-        lg: { min: "1023px", max: "1279px" }, //TRANSFORM 2
+        mdh: {
+          raw: "(min-width: 767px) and (max-width: 1023px) and (min-height: 768px)",
+        },
+
+        lg: {
+          //TRANSFORM 2
+          raw: "(min-width: 1023px) and (max-width: 1279px) and (max-height: 767px)",
+        },
+
+        lgh: {
+          raw: "(min-width: 1023px) and (max-width: 1279px) and (min-height: 768px)",
+        },
 
         xl: { min: "1280px", max: "1535px" },
 
@@ -89,6 +102,7 @@ module.exports = {
       },
       spacing: {
         0.7: "0.19rem",
+        18: "4.5rem",
       },
       borderWidth: {
         3: "3px",

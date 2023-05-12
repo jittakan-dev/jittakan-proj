@@ -29,7 +29,7 @@ public class EmailController {
 	@PostMapping
 	public ResponseEntity<Email> sendEmail(@RequestBody Email email) {
 		SimpleMailMessage mail = new SimpleMailMessage();
-		mail.setTo(email.getEmail());
+		mail.setTo("sn.jittakan@hotmail.com");//email.getEmail()
 		mail.setSubject(email.getSubject());
 		mail.setText(email.getMessage());
 		javaMailSender.send(mail);

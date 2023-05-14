@@ -18,8 +18,8 @@
 		<java.version>17</java.version>
 		<frontend-src-dir>${project.basedir}/proj-client</frontend-src-dir>
 		<node.version>v18.12.0</node.version>
-		<yarn.version>v1.22.19</yarn.version>
-		<frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>
+		<npmVersion.version>v9.2.0</npmVersion.version>
+		<frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -50,11 +50,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -96,7 +91,7 @@
 				<version>${frontend-maven-plugin.version}</version>
 				<configuration>
 					<nodeVersion>${node.version}</nodeVersion>
-					<yarnVersion>${yarn.version}</yarnVersion>
+					<npmVersion>${npm.version}</npmVersion>
 					<workingDirectory>${frontend-src-dir}</workingDirectory>
 					<installDirectory>${project.build.directory}</installDirectory>
 				</configuration>
@@ -104,13 +99,13 @@
 					<execution>
 						<id>install-frontend-tools</id>
 						<goals>
-							<goal>install-node-and-yarn</goal>
+							<goal>install-node-and-npm</goal>
 						</goals>
 					</execution>
 					<execution>
-						<id>yarn-install</id>
+						<id>npm-install</id>
 						<goals>
-							<goal>yarn</goal>
+							<goal>npm</goal>
 						</goals>
 						<configuration>
 							<arguments>install</arguments>
@@ -119,11 +114,11 @@
 					<execution>
 						<id>build-frontend</id>
 						<goals>
-							<goal>yarn</goal>
+							<goal>npm</goal>
 						</goals>
 						<phase>prepare-package</phase>
 						<configuration>
-							<arguments>build</arguments>				
+							<arguments>run build</arguments>				
 						</configuration>
 					</execution>
 				</executions>

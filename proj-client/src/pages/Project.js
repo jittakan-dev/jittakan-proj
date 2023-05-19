@@ -9,7 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { ProjectProgress } from "../utilities/Helper";
-const Project = () => {
+
+const Project = ({ onProjectData }) => {
   const [toggleStates, setToggleStates] = useState({});
   const [sortOrder, setSortOrder] = useState("asc");
   const [project, setProject] = useState([]);
@@ -17,6 +18,7 @@ const Project = () => {
   const [order, setOrder] = useState(1);
   const [item, setProjectItem] = useState(1);
   const scrollRefs = useRef([]);
+
   let totalProjectProgress = 0;
   let totalProjectNumber = 0;
 
@@ -59,6 +61,7 @@ const Project = () => {
       });
       const data = await response.json();
       setProject(data);
+      onProjectData(data.length);
       scrollRefs.current = scrollRefs.current.slice(0, data.length);
     } catch (error) {
       console.error("Error fetching projects:", error);
@@ -115,7 +118,8 @@ const Project = () => {
       </div>
 
       <div className="flex flex-row w-full">
-        <div className="w-4/5 sx:w-full smr:w-full sm:w-full md:w-full lg:w-4/5 xl:w-4/5 2xl:w-4/5 bg-whiteG">
+        <div className="w-11/12 sx:w-full smr:w-full sm:w-full md:w-full lg:w-11/12 xl:w-11/12 2xl:w-11/12 bg-whiteG">
+          {/* <div className="w-full bg-whiteG"> */}
           {sortedProjects.map((project, index) => {
             totalProjectProgress += project.projectProgress;
             totalProjectNumber = index + 1;
@@ -134,9 +138,9 @@ const Project = () => {
                     item === project.id ? "text-green-900" : "text-blackGB"
                   }`}
                 >
-                  <div className="grid grid-cols-5 grid-rows-1 gap-0.7 h-full w-full">
-                    <div className="col-span-5 row-span-1">
-                      <div className="flex flex-row h-full w-full items-center justify-center">
+                  <div className="grid grid-cols-9 grid-rows-1 gap-0.7 h-full w-full">
+                    <div className="col-span-8 row-span-1">
+                      <div className="flex flex-row h-full w-full items-center justify-center border-r-3 border-darkLGB">
                         <div className="flex sx:hidden smr:hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex items-end justify-center p-6 h-full w-auto border-r-3 border-darkLGB">
                           {toggleStates[index] ? (
                             <FontAwesomeIcon icon={faAngleUp} />
@@ -153,7 +157,7 @@ const Project = () => {
                               item === project.id ? "bg-mustard" : "bg-lightGB"
                             }`}
                           >
-                            <div className="flex flex-col justify-center items-center h-full">
+                            <div className="flex flex-col justify-center items-center h-full ">
                               <div className="p-2 text-3xl sx:text-xl smr:text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
                                 {project.projectName}
                               </div>
@@ -172,6 +176,7 @@ const Project = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="w-full h-full col-span-1 row-span-1 "></div>
                   </div>
                 </button>
                 <div
@@ -322,8 +327,8 @@ const Project = () => {
             );
           })}
         </div>
-        <div className="flex flex-col sx:hidden smr:hidden sm:hidden md:hidden lg:block xl:block 2xl:block w-1/5 lg:w-1/5 xl:w-1/5 2xl:w-1/5 bg-whiteDY border-l-8 border-b-3 border-darkLGB">
-          <div className="flex flex-col sticky top-1/3 z-30 pl-10 my-5 justify-center items-start w-full h-auto ">
+        <div className="flex flex-col sx:hidden smr:hidden sm:hidden md:hidden lg:block xl:block 2xl:block w-1/12 lg:w-1/12 xl:w-1/12 2xl:w-1/12 bg-whiteDY border-l-8 border-b-3 border-darkLGB">
+          {/* <div className="flex flex-col sticky top-1/3 z-30 pl-10 my-5 justify-center items-start w-full h-auto ">
             <div className="w-full py-2 text-6xl lg:text-5xl xl:text-5xl 2xl:text-6xl border-b-3 border-darkLGB">
               {totalProjectProgress / totalProjectNumber
                 ? Math.floor(totalProjectProgress / totalProjectNumber)
@@ -336,9 +341,10 @@ const Project = () => {
               </span>
               <span>Projects.</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+
       <div className="flex w-full h-full p-8 bg-whiteY border-b-4 border-darkLGB"></div>
 
       <div className="grid grid-cols-5 grid-rows-1 gap-0.7 relative h-full w-full border-b-4 border-darkLGB">

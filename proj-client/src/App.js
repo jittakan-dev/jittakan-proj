@@ -67,8 +67,6 @@ const App = () => {
       setBrowser("UN");
     }
 
-    console.log(`Detected browser: ${browserName}`);
-
     function handleResize() {
       setIsMobile(window.innerWidth < 320);
     }

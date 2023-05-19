@@ -46,11 +46,12 @@ const Home = () => {
     main: useRef(null),
   };
 
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const [projectData, setProjectData] = useState();
+
+  const handleProjectData = (newData) => {
+    console.log(newData);
+    setProjectData(newData);
+  };
 
   const handleClick = useCallback(() => {
     setIsContactOpen((prevOpen) => !prevOpen);
@@ -93,6 +94,9 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoading(false);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [setIsLoading]);
 
   if (isLoading) {
@@ -212,18 +216,34 @@ const Home = () => {
               className="col-span-1 row-span-2 w-full flex sx:hidden smr:hidden sm:hidden md:hidden mdh:hidden lg:flex lgh:hidden xl:flex 2xl:flex
  flex-col bg-whiteDG"
             >
-              <div className="w-full sticky top-2/4 z-20 text-3xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl text-left bg-whiteDG">
-                <div className="p-1 my-10 py-8 border-b-4 border-darkLGB">
-                  <p className="w-fit">
-                    {menu === 1 ? "PROJECT." : menu === 2 ? "ABOUT." : null}
+              <div className="w-full sticky top-2/4 z-20 text-left bg-whiteDG">
+                <div className="pl-3 my-10 py-8 border-b-4 border-darkLGB">
+                  <p className="w-fit py-2 text-3xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl border-b-3 border-darkLGB">
+                    {menu === 1 ? "PROJECTs." : menu === 2 ? "ABOUT." : null}
                   </p>
+                  {menu === 1 ? (
+                    <p className="py-2">
+                      <span className="text-3xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
+                        {projectData}
+                      </span>
+                      <span className="pl-1 text-xl sm:text-base-l md:text-lg lg:text-lg xl:text-lg 2xl:text-xl">
+                        underway projects
+                      </span>
+                    </p>
+                  ) : (
+                    <p className="py-2">
+                      <span className="text-xl sm:text-base-l md:text-lg lg:text-lg xl:text-lg 2xl:text-xl">
+                        and the passions
+                      </span>
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
 
             <div className="col-span-5 row-span-2">
               <div id="tab-1" className="tab-content flex flex-col">
-                <Project />
+                <Project onProjectData={handleProjectData} />
               </div>
 
               <div

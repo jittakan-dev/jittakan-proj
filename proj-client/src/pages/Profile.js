@@ -120,12 +120,12 @@ const Profile = function (props) {
         <div className="flex flex-col w-5/12 sx:w-full smr:w-full sm:w-5/12 md:w-5/12 mdh:w-4/12 lg:w-4/12 lgh:w-4/12 xl:w-4/12 2xl:w-4/12">
           <div className="p-6 border-b-3 border-darkLGB"></div>
           <div className="flex flex-col w-full justify-center items-start border-t-3 sx:border-t-3 smr:border-t-3 sm:border-t-0 md:border-t-0 lg:border-t-0 xl:border-t-0 2xl:border-t-0 border-darkLGB">
-            <div className="flex flex-col w-full h-fit justify-center items-center p-10 sx:p-10 smr:p-10 sm:p-6 md:p-6 lg:p-10 xl:p-10 2xl:p-10 border-b-3 border-darkLGB bg-mustard">
-              <p className="pl-2 pt-10 sx:pt-0 smr:pt-0 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-10 2xl:pt-10 text-3xl sx:text-2xl smr:text-2xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
-                Jittakan Suwannakhon
+            <div className="flex flex-col w-full h-fit justify-center items-start p-10 sx:p-10 smr:p-10 sm:p-6 md:p-6 lg:p-10 xl:p-10 2xl:p-10 border-b-3 border-darkLGB bg-mustard">
+              <p className="text-left pl-2 pt-10 sx:pt-0 smr:pt-0 sm:pt-10 md:pt-10 lg:pt-10 xl:pt-10 2xl:pt-10 text-3xl sx:text-2xl smr:text-2xl sm:text-1.5xl md:text-2xl mdh:text-2xl lg:text-2xl lgh:text-2xl xl:text-2xl 2xl:text-3xl border-l-8 border-darkLGB">
+                Jittakan <br /> Suwannakhon
               </p>
             </div>
-            <div className="flex flex-col w-full h-fit justify-center items-center p-10 sx:p-10 smr:p-10 sm:p-6 md:p-6 lg:p-10 xl:p-10 2xl:p-10 text-1.5xl sx:text-lg smr:text-xl sm:text-lg md:text-xl mdh:text-xl lg:text-xl lgh:text-xl xl:text-xl 2xl:text-1.5xl bg-whiteG ">
+            <div className="flex flex-col w-full h-fit justify-center items-start p-10 sx:p-10 smr:p-10 sm:p-6 md:p-6 lg:p-10 xl:p-10 2xl:p-10 text-1.5xl sx:text-lg smr:text-xl sm:text-lg md:text-xl mdh:text-xl lg:text-xl lgh:text-xl xl:text-xl 2xl:text-1.5xl bg-whiteG ">
               <div className="flex flex-col justify-center items-start">
                 <p className="text-left">
                   <span className="font-extrabold">+</span> Java and JS
@@ -182,7 +182,7 @@ const Profile = function (props) {
             </p>
           </div>
           <p>
-            Hey, I'm Jittakan. I'm a passionate developer.
+            Hey, I am Jittakan, and I am a passionate developer.
             <br />
             <br />
             As an experienced full-stack developer, I possess a moderate command
@@ -232,8 +232,8 @@ const Profile = function (props) {
             <div className="flex">
               <div className="p-6 sx:p-3 smr:p-3 sm:p-3 md:p-3 lg:p-6 xl:p-6 2xl:p-6 border-r-3 border-darkLGB bg-whiteG"></div>
               <div className="flex flex-col w-full p-10 sx:p-6 smr:p-10 sm:p-4 md:p-6 lg:p-8 2xl:p-10">
-                <div className="mb-4 md:mb-2 lg:mb-3 pb-4 md:pb-2 lg:pb-3 font-semibold text-2xl sm:text-lg md:text-xl mdh:text-1.5xl lg:text-2xl lgh:text-1.5xl xl:text-2xl 2xl:text-2xl text-right sx:text-center smr:text-center 2xl:text-right border-b-3 border-darkLGB">
-                  Ongoing Goals
+                <div className="mb-4 md:mb-2 lg:mb-3 pb-4 md:pb-2 lg:pb-3  text-2xl sm:text-lg md:text-xl mdh:text-1.5xl lg:text-2xl lgh:text-1.5xl xl:text-2xl 2xl:text-2xl text-right sx:text-center smr:text-center 2xl:text-right border-b-3 border-darkLGB">
+                  Undone Goals
                 </div>
                 {incompleteCertificates.map((certificate) => {
                   return (
@@ -262,7 +262,7 @@ const Profile = function (props) {
               <div className="p-6 sx:p-3 smr:p-3 sm:p-3 md:p-3 lg:p-6 xl:p-6 2xl:p-6 border-r-3 border-darkLGB bg-whiteG"></div>
               <div className="flex flex-col w-full p-10 sx:p-6 smr:p-10 sm:p-4 md:p-6 lg:p-8 2xl:p-10">
                 <div
-                  className="mb-4 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-4 pb-4 md:pb-2 lg:pb-3 xl:pb-4 2xl:pb-4 font-semibold text-2xl sm:text-lg md:text-xl mdh:text-1.5xl lg:text-2xl lgh:text-1.5xl xl:text-2xl 2xl:text-2xl 
+                  className="mb-4 md:mb-2 lg:mb-3 xl:mb-4 2xl:mb-4 pb-4 md:pb-2 lg:pb-3 xl:pb-4 2xl:pb-4 text-2xl sm:text-lg md:text-xl mdh:text-1.5xl lg:text-2xl lgh:text-1.5xl xl:text-2xl 2xl:text-2xl 
                 text-right sx:text-center smr:text-center 2xl:text-right border-b-3 border-darkLGB"
                 >
                   Completed Goals
@@ -324,7 +324,7 @@ const Profile = function (props) {
                     : "border-darkLGB"
                 }`}
               >
-                Ongoing goals
+                This year targets
               </button>
               <button
                 data-tab="profile-tab-2"
@@ -340,7 +340,7 @@ const Profile = function (props) {
                     : "border-darkLGB"
                 }`}
               >
-                Completed goals
+                Met milestones
               </button>
             </div>
           </div>

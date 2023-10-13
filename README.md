@@ -1,10 +1,9 @@
 <style type="text/css">
-span {color:red;}
 p {color:blue;}
 </style>
 # jittakan-proj
 
-<span> **This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient. </span>
+<p> **This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient. </p>
 
 https://jittakan-proj.herokuapp.com/
 

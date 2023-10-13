@@ -1,10 +1,7 @@
-<style type="text/css">
-p {color:blue;}
-</style>
 # jittakan-proj
-
-<p> **This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient. </p>
-
+```diff
+- **This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient.
+```diff
 https://jittakan-proj.herokuapp.com/
 
 My blog is about freshness, creativity, and simplicity in spaghetti code.

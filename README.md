@@ -1,5 +1,5 @@
 # jittakan-proj
-<span color="red-text">***This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient.</span>
+<span style="color: red;">***This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient.</span>
 https://jittakan-proj.herokuapp.com/
 
 My blog is about freshness, creativity, and simplicity in spaghetti code.

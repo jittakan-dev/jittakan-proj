@@ -1,10 +1,8 @@
 # jittakan-proj
 
-This start line should red
-```diff
-**This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient.**
-```diff
-This end red line
+
+## **This site starts very slowly due to the cheapest Heroku hosting plan (Server always sleepy and compute resources are shared). Please be patient.**
+
 
 https://jittakan-proj.herokuapp.com/
 
